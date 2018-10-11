@@ -7,7 +7,7 @@
 ## Introduction
 Recommendation systems are in tons of things you interact with every day. Amazon, Spotify, and Facebook are some of the biggest players, and they're using all the data they can to suggest products that they think you'll love.
 
-<img src="images/spotify_recommendations.png">
+![](images/spotify_recommendations.png)
 
 Some companies have teams of people collection, cleaning, and building models around this data. However, with a few useful Python packages and some great data from [Amazon's customer review dataset](https://s3.amazonaws.com/amazon-reviews-pds/readme.html), I'm going to build a recommendation system by myself.
 
@@ -583,7 +583,7 @@ reviews[reviews.product_parent == 297568235][['product_title'
 
 So it seems that `product_parent` distinguishes between different products since there are different values for `product_id`. However, all of these products share the same value for `product_title`. It seems that the different `product_id` values represent differences in things colors or sizes, like in the product example below.
 
-<img src="images/nylon_selections.png">
+![](images/nylon_selections.png)
 
 This could cause a problem in the future; a user theoretically could be recommended three products with unique `product_id` values, but they're really all the same product. I want to recommend three different products instead.
 
